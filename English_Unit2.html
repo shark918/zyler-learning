@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unit 2 Productive Vocabulary 1–25</title>
+<style>
+:root{--card:#fff;--ink:#16324a;--muted:#64788c;--blue:#2f67d8;--blue2:#eaf1ff;--border:#dbe6f4}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(#eef5ff,#fff);color:var(--ink)}
+.wrap{max-width:1050px;margin:auto;padding:16px 12px 40px}
+.hero{background:white;border:1px solid var(--border);border-radius:22px;padding:22px;box-shadow:0 8px 24px rgba(30,70,120,.08)}
+.kicker{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:.08em;text-transform:uppercase}
+h1{margin:6px 0 6px;font-size:clamp(30px,6vw,44px)}
+.sub{color:var(--muted);font-size:16px}
+.voicebox{margin-top:16px;padding:14px;background:#f7faff;border:1px solid var(--border);border-radius:14px}
+.voice-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+select{flex:1;min-width:220px;padding:10px;border:1px solid #cbd9ec;border-radius:10px;font-size:15px}
+button{border:0;border-radius:11px;padding:10px 12px;font-weight:800;cursor:pointer;background:var(--blue);color:#fff}
+.secondary{background:var(--blue2);color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:18px}
+.card{position:relative;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:0 5px 18px rgba(25,65,110,.06)}
+.num{position:absolute;right:13px;top:11px;width:30px;height:30px;border-radius:50%;background:var(--blue2);color:var(--blue);display:grid;place-items:center;font-weight:900}
+.wordline{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-right:35px}
+.word{font-size:24px;font-weight:900;line-height:1.1}
+.pron{font-size:14px;color:var(--blue);font-weight:800;margin-top:4px}
+.sound{width:42px;height:42px;padding:0;border-radius:12px;background:#eff4ff;color:var(--blue);font-size:18px}
+.meaning{margin-top:13px;line-height:1.45}
+.examples{margin-top:10px;padding:10px 12px;background:#f8fbff;border-radius:12px;line-height:1.5}
+.examples div+div{margin-top:5px}
+.study-note{margin-top:18px;background:#fffbea;border:1px solid #eedf9b;border-radius:15px;padding:14px}
+.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+@media(max-width:520px){.wrap{padding:9px 8px 28px}.hero{padding:17px}.card{padding:14px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+<div class="kicker">Unit 2 • Move to the Music</div>
+<h1>Productive Vocabulary 1–25</h1>
+<div class="sub">Learn the word, pronunciation, meaning and two simple example sentences.</div>
+<div class="voicebox">
+<b>🎙 US English voice</b>
+<div class="voice-row" style="margin-top:8px">
+<select id="voiceSelect" onchange="saveSelectedVoice()"></select>
+<button class="secondary" onclick="previewVoice()">Preview voice</button>
+</div>
+<div style="font-size:13px;color:var(--muted);margin-top:7px">Choose the US voice that sounds most natural. The page will remember the choice.</div>
+</div>
+</section>
+<div class="study-note"><b>How to study:</b> Read the word → press 🔊 → say it aloud → read both sentences → cover the word and try to spell it.</div>
+<main class="grid">
+
+<article class="card">
+  <div class="num">1</div>
+  <div class="wordline">
+    <div>
+      <div class="word">cello</div>
+      <div class="pron">CHEL-oh</div>
+    </div>
+    <button class="sound" onclick="speakText('cello')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a large string instrument played with a bow.</div>
+  <div class="examples">
+    <div><b>1.</b> The girl plays the cello.</div>
+    <div><b>2.</b> The cello has a deep sound.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">2</div>
+  <div class="wordline">
+    <div>
+      <div class="word">classical music</div>
+      <div class="pron">KLASS-i-kuhl MYOO-zik</div>
+    </div>
+    <button class="sound" onclick="speakText('classical music')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> music written in a traditional style, often played by an orchestra.</div>
+  <div class="examples">
+    <div><b>1.</b> My dad likes classical music.</div>
+    <div><b>2.</b> We listened to classical music at school.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">3</div>
+  <div class="wordline">
+    <div>
+      <div class="word">concert</div>
+      <div class="pron">KON-surt</div>
+    </div>
+    <button class="sound" onclick="speakText('concert')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a live music performance.</div>
+  <div class="examples">
+    <div><b>1.</b> We went to a concert last night.</div>
+    <div><b>2.</b> The concert starts at seven o'clock.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">4</div>
+  <div class="wordline">
+    <div>
+      <div class="word">dancer</div>
+      <div class="pron">DAN-ser</div>
+    </div>
+    <button class="sound" onclick="speakText('dancer')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a person who dances.</div>
+  <div class="examples">
+    <div><b>1.</b> The dancer moves beautifully.</div>
+    <div><b>2.</b> She wants to be a dancer.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">5</div>
+  <div class="wordline">
+    <div>
+      <div class="word">drums</div>
+      <div class="pron">drumz</div>
+    </div>
+    <button class="sound" onclick="speakText('drums')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a musical instrument that you hit with sticks or your hands.</div>
+  <div class="examples">
+    <div><b>1.</b> He plays the drums loudly.</div>
+    <div><b>2.</b> The drums make a strong beat.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">6</div>
+  <div class="wordline">
+    <div>
+      <div class="word">flute</div>
+      <div class="pron">floot</div>
+    </div>
+    <button class="sound" onclick="speakText('flute')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a long musical instrument that you blow into.</div>
+  <div class="examples">
+    <div><b>1.</b> She can play the flute.</div>
+    <div><b>2.</b> The flute has a light sound.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">7</div>
+  <div class="wordline">
+    <div>
+      <div class="word">keyboard</div>
+      <div class="pron">KEE-bord</div>
+    </div>
+    <button class="sound" onclick="speakText('keyboard')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> an electronic musical instrument with black and white keys.</div>
+  <div class="examples">
+    <div><b>1.</b> He plays songs on the keyboard.</div>
+    <div><b>2.</b> The keyboard is next to the drums.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">8</div>
+  <div class="wordline">
+    <div>
+      <div class="word">pop music</div>
+      <div class="pron">pop MYOO-zik</div>
+    </div>
+    <button class="sound" onclick="speakText('pop music')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> popular modern music with a strong beat.</div>
+  <div class="examples">
+    <div><b>1.</b> Zyler likes pop music.</div>
+    <div><b>2.</b> We danced to pop music.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">9</div>
+  <div class="wordline">
+    <div>
+      <div class="word">singer</div>
+      <div class="pron">SING-er</div>
+    </div>
+    <button class="sound" onclick="speakText('singer')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a person who sings.</div>
+  <div class="examples">
+    <div><b>1.</b> The singer has a beautiful voice.</div>
+    <div><b>2.</b> My favourite singer is on TV.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">10</div>
+  <div class="wordline">
+    <div>
+      <div class="word">violin</div>
+      <div class="pron">vy-uh-LIN</div>
+    </div>
+    <button class="sound" onclick="speakText('violin')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a small string instrument played with a bow.</div>
+  <div class="examples">
+    <div><b>1.</b> She plays the violin every day.</div>
+    <div><b>2.</b> The violin is smaller than a cello.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">11</div>
+  <div class="wordline">
+    <div>
+      <div class="word">art</div>
+      <div class="pron">art</div>
+    </div>
+    <button class="sound" onclick="speakText('art')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> the subject of drawing, painting and making things.</div>
+  <div class="examples">
+    <div><b>1.</b> We paint pictures in art class.</div>
+    <div><b>2.</b> Art is my favourite subject.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">12</div>
+  <div class="wordline">
+    <div>
+      <div class="word">backpack (US)</div>
+      <div class="pron">BACK-pack</div>
+    </div>
+    <button class="sound" onclick="speakText('backpack')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a bag carried on your back.</div>
+  <div class="examples">
+    <div><b>1.</b> I put my books in my backpack.</div>
+    <div><b>2.</b> His backpack is very heavy.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">13</div>
+  <div class="wordline">
+    <div>
+      <div class="word">rucksack (UK)</div>
+      <div class="pron">RUCK-sack</div>
+    </div>
+    <button class="sound" onclick="speakText('rucksack')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a bag carried on your back.</div>
+  <div class="examples">
+    <div><b>1.</b> She carries a rucksack to school.</div>
+    <div><b>2.</b> The rucksack is under the desk.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">14</div>
+  <div class="wordline">
+    <div>
+      <div class="word">club</div>
+      <div class="pron">klub</div>
+    </div>
+    <button class="sound" onclick="speakText('club')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a group of people who meet for the same activity or interest.</div>
+  <div class="examples">
+    <div><b>1.</b> I joined the music club.</div>
+    <div><b>2.</b> Our school has a chess club.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">15</div>
+  <div class="wordline">
+    <div>
+      <div class="word">college</div>
+      <div class="pron">KOL-ij</div>
+    </div>
+    <button class="sound" onclick="speakText('college')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a place where people study after secondary school.</div>
+  <div class="examples">
+    <div><b>1.</b> My sister studies at college.</div>
+    <div><b>2.</b> The college is near our home.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">16</div>
+  <div class="wordline">
+    <div>
+      <div class="word">competition</div>
+      <div class="pron">kom-puh-TISH-un</div>
+    </div>
+    <button class="sound" onclick="speakText('competition')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> an event where people try to win.</div>
+  <div class="examples">
+    <div><b>1.</b> He joined a singing competition.</div>
+    <div><b>2.</b> Our team won the competition.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">17</div>
+  <div class="wordline">
+    <div>
+      <div class="word">dictionary</div>
+      <div class="pron">DIK-shuh-nair-ee</div>
+    </div>
+    <button class="sound" onclick="speakText('dictionary')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a book or app that tells you the meanings of words.</div>
+  <div class="examples">
+    <div><b>1.</b> I use a dictionary to check new words.</div>
+    <div><b>2.</b> Please look up the word in the dictionary.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">18</div>
+  <div class="wordline">
+    <div>
+      <div class="word">flag</div>
+      <div class="pron">flag</div>
+    </div>
+    <button class="sound" onclick="speakText('flag')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a piece of cloth with colours or a design that represents a country or group.</div>
+  <div class="examples">
+    <div><b>1.</b> The flag is flying in the wind.</div>
+    <div><b>2.</b> We drew our national flag.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">19</div>
+  <div class="wordline">
+    <div>
+      <div class="word">geography</div>
+      <div class="pron">jee-OG-ruh-fee</div>
+    </div>
+    <button class="sound" onclick="speakText('geography')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> the study of countries, places and the Earth.</div>
+  <div class="examples">
+    <div><b>1.</b> We learn about maps in geography.</div>
+    <div><b>2.</b> Geography is interesting.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">20</div>
+  <div class="wordline">
+    <div>
+      <div class="word">glue</div>
+      <div class="pron">gloo</div>
+    </div>
+    <button class="sound" onclick="speakText('glue')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a sticky substance used to join things together.</div>
+  <div class="examples">
+    <div><b>1.</b> Use glue to stick the paper together.</div>
+    <div><b>2.</b> There is some glue on the desk.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">21</div>
+  <div class="wordline">
+    <div>
+      <div class="word">group</div>
+      <div class="pron">groop</div>
+    </div>
+    <button class="sound" onclick="speakText('group')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a number of people or things together.</div>
+  <div class="examples">
+    <div><b>1.</b> We worked in a group of four.</div>
+    <div><b>2.</b> Our group made a poster.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">22</div>
+  <div class="wordline">
+    <div>
+      <div class="word">gym</div>
+      <div class="pron">jim</div>
+    </div>
+    <button class="sound" onclick="speakText('gym')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a place for exercise and sports.</div>
+  <div class="examples">
+    <div><b>1.</b> We play basketball in the gym.</div>
+    <div><b>2.</b> The gym is next to the library.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">23</div>
+  <div class="wordline">
+    <div>
+      <div class="word">history</div>
+      <div class="pron">HIS-tuh-ree</div>
+    </div>
+    <button class="sound" onclick="speakText('history')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> the study of things that happened in the past.</div>
+  <div class="examples">
+    <div><b>1.</b> We learn about old buildings in history.</div>
+    <div><b>2.</b> History tells us about the past.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">24</div>
+  <div class="wordline">
+    <div>
+      <div class="word">language</div>
+      <div class="pron">LANG-gwij</div>
+    </div>
+    <button class="sound" onclick="speakText('language')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> a system of words people use to speak and write.</div>
+  <div class="examples">
+    <div><b>1.</b> English is a language.</div>
+    <div><b>2.</b> She can speak more than one language.</div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="num">25</div>
+  <div class="wordline">
+    <div>
+      <div class="word">maths (UK)</div>
+      <div class="pron">maths</div>
+    </div>
+    <button class="sound" onclick="speakText('maths')">🔊</button>
+  </div>
+  <div class="meaning"><b>Meaning:</b> the school subject about numbers, shapes and calculations.</div>
+  <div class="examples">
+    <div><b>1.</b> We learn fractions in maths.</div>
+    <div><b>2.</b> Maths is my first lesson today.</div>
+  </div>
+</article>
+
+</main>
+<div class="footer">Offline vocabulary study page • Unit 2 Productive Vocabulary</div>
+</div>
+<script>
+let availableVoices=[];
+let selectedVoiceName=localStorage.getItem("zylerUnit2USVoice")||"";
+function loadVoices(){
+  availableVoices=speechSynthesis.getVoices();
+  const usVoices=availableVoices.filter(v=>(v.lang||"").toLowerCase().startsWith("en-us"));
+  const select=document.getElementById("voiceSelect");
+  if(!select)return;
+  select.innerHTML="";
+  if(usVoices.length===0){
+    const opt=document.createElement("option");opt.value="";opt.textContent="Default US English voice";select.appendChild(opt);return;
+  }
+  usVoices.forEach(v=>{const opt=document.createElement("option");opt.value=v.name;opt.textContent=v.name+" ("+v.lang+")";select.appendChild(opt);});
+  if(selectedVoiceName&&usVoices.some(v=>v.name===selectedVoiceName)){select.value=selectedVoiceName;}
+  else{selectedVoiceName=usVoices[0].name;select.value=selectedVoiceName;localStorage.setItem("zylerUnit2USVoice",selectedVoiceName);}
+}
+function saveSelectedVoice(){const s=document.getElementById("voiceSelect");if(s){selectedVoiceName=s.value;localStorage.setItem("zylerUnit2USVoice",selectedVoiceName);}}
+function chosenVoice(){saveSelectedVoice();return availableVoices.find(v=>v.name===selectedVoiceName)||null;}
+speechSynthesis.onvoiceschanged=loadVoices;
+window.addEventListener("load",()=>{loadVoices();setTimeout(loadVoices,300);setTimeout(loadVoices,1000);});
+function speakText(text){
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang="en-US";u.rate=.82;
+  const v=chosenVoice();if(v)u.voice=v;
+  speechSynthesis.speak(u);
+}
+function previewVoice(){speakText("Hello Zyler. This is the selected American English voice.");}
+</script>
+</body>
+</html>
